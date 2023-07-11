@@ -1,3 +1,7 @@
+# 개요
+* [이전예제](../step1_count_only_subnet/)에서 az를 변수로 설정해달라는 요청을 해결
+* 전제조건: count를 사용할 것!
+
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
