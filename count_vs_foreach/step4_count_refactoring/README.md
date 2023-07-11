@@ -1,6 +1,5 @@
 # 개요
-* [이전 세번째 예제](../step3_count_only_subnet_with_az_tag/)에서 tag를 변수로 설정해달라는 요청을 해결
-* 전제조건: count를 사용할 것!
+* [이전 세번째 예제](../step3_count_only_subnet_with_az_tag/)에서 변수 설정이 불편한 점을 개선
 
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
