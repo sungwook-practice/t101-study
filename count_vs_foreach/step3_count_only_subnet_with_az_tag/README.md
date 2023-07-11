@@ -1,5 +1,5 @@
 # 개요
-* [이전 첫번째 예제](../step1_count_only_subnet/)에서 az를 변수로 설정해달라는 요청을 해결
+* [이전 두번째 예제](../step2_count_only_subnet/)에서 tag를 변수로 설정해달라는 요청을 해결
 * 전제조건: count를 사용할 것!
 
 <!-- BEGIN_TF_DOCS -->
@@ -33,6 +33,7 @@ No modules.
 |------|-------------|------|---------|:--------:|
 | <a name="input_public_subnet_azs"></a> [public\_subnet\_azs](#input\_public\_subnet\_azs) | n/a | `list(string)` | n/a | yes |
 | <a name="input_public_subnet_cidrs"></a> [public\_subnet\_cidrs](#input\_public\_subnet\_cidrs) | n/a | `list(string)` | n/a | yes |
+| <a name="input_public_subnet_tags"></a> [public\_subnet\_tags](#input\_public\_subnet\_tags) | n/a | `list(map(string))` | n/a | yes |
 | <a name="input_vpc_cidr"></a> [vpc\_cidr](#input\_vpc\_cidr) | n/a | `string` | n/a | yes |
 
 ## Outputs
