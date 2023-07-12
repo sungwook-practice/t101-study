@@ -1,6 +1,11 @@
 # 개요
-* [이전 예제](../step5_count_invalid_example/)에서 count반복문 단점을 foreach방법으로 개선
-* 단점: 리스트 요소가 변경되면 기존 리소스가 교체(replaced)되거나 테라폼 실행 오류 발생
+* count를 사용하는 경우, 리소스 교체가 발생하는 상황을 재현
+* 상황 재현 방법
+```bash
+1. terraform apply
+2. terraform.tfvars파일에서 subnets값 첫번째 요소를 주석하세요
+3. terraform plan의 결과를 확인하세요. EC2 instance는 replaced표시가 나옵니다.
+```
 
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
@@ -24,14 +29,12 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [aws_subnet.public](https://registry.terraform.io/providers/hashicorp/aws/5.4.0/docs/resources/subnet) | resource |
 | [aws_vpc.main](https://registry.terraform.io/providers/hashicorp/aws/5.4.0/docs/resources/vpc) | resource |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_public_subnets"></a> [public\_subnets](#input\_public\_subnets) | n/a | <pre>map(object({<br>    cidr = string<br>    az   = string<br>    tags = map(string)<br>  }))</pre> | n/a | yes |
 | <a name="input_vpc_cidr"></a> [vpc\_cidr](#input\_vpc\_cidr) | n/a | `string` | n/a | yes |
 
 ## Outputs
