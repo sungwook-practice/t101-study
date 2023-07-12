@@ -20,7 +20,8 @@ resource "aws_instance" "server" {
   ami           = "ami-0e8bd0820b6e1360b"
   instance_type = "t4g.nano"
   subnet_id = aws_subnet.main[1].id
-
+  # index 접근 방법 오류 해결 코드
+  # subnet_id = index(aws_subnet.main.*.cidr_block, "192.168.2.0/24")
   tags = {
     Name = "Terraform demo"
   }
