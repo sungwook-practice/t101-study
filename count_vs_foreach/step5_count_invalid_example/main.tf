@@ -19,7 +19,7 @@ resource "aws_subnet" "main" {
 resource "aws_instance" "server" {
   ami           = "ami-0e8bd0820b6e1360b"
   instance_type = "t4g.nano"
-  subnet_id = aws_subnet.main[0].id
+  subnet_id = aws_subnet.main[1].id
 
   tags = {
     Name = "Terraform demo"

@@ -17,5 +17,21 @@ subnets = [
       Name = "private-subnet"
       Environment = "dev"
     }
+  },
+  {
+    cidr = "192.168.3.0/24",
+    az = "ap-northeast-2a",
+    tags = {
+      Name = "public-subnet"
+      Environment = "dev"
+    }
+  },
+  {
+    cidr = "192.168.4.0/24",
+    az = "ap-northeast-2c",
+    tags = {
+      Name = "private-subnet"
+      Environment = "dev"
+    }
   }
 ]
