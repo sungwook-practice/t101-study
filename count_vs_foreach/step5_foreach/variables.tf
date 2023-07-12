@@ -2,7 +2,7 @@ variable "vpc_cidr" {
   type = string
 }
 
-variable "public_subnets" {
+variable "subnets" {
   type = map(object({
     cidr = string
     az   = string
