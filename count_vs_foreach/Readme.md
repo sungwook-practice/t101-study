@@ -1,5 +1,6 @@
 # 개요
 * count와 for_each를 비교하기 위한 예제 모음
+* 유투브 영상: https://youtu.be/enhSdIJ9xxQ
 
 # 목차
 > step1 -> stepn 순서로 코드가 수정됩니다.
