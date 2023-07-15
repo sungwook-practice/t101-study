@@ -2,7 +2,6 @@
 dynamic block 예제
 
 # 목차
-* [유투브 실습용 템플릿](./template/)
 * [dynamic block 적용 전](./before/)
 * [dynamic block 적용](./after/)
 
