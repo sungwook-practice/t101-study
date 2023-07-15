@@ -6,7 +6,7 @@ resource "aws_vpc" "main" {
   }
 }
 
-resource "aws_security_group" "name" {
+resource "aws_security_group" "main" {
   name        = "terraform-dynamicblock-test"
   description = "terraform-dynamicblock-test"
   vpc_id      = aws_vpc.main.id
