@@ -18,4 +18,4 @@ uvicorn main:app --host 127.0.0.1 --port 8000
 ```
 
 # API 호출방법
-* swager페이지인 http://localhost:8080/docs에 접속 후 호출 테스트 진행
+* swager페이지인 http://localhost:8000/docs에 접속 후 호출 테스트 진행
