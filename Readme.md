@@ -10,3 +10,5 @@ t101 테라폼 스터디 기록
   * [count vs foreach 비교 예제](./count_vs_foreach/)
 * 3주차
   * [local provisioner with python API](./provisioner/local/)
+* 4주차
+  * [state 예제](./state/)
